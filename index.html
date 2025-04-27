@@ -19,6 +19,15 @@
       href="https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/BMW_logo_(gray).svg.png"
+    />
+    <script
+      defer
+      src="./index.js"
+    ></script>
   </head>
   <body>
     <header id="glance">
@@ -30,17 +39,9 @@
           />
         </button>
         <div class="dropdown-content">
-          <a href="#glance">At a glance</a>
           <a href="#design">Design</a>
-          <a href="#">Lines & Equipment</a>
-          <a href="#">Engines</a>
-          <a href="#">Driving dynamics & efficiency</a>
-          <a href="#">BMW iPerformance</a>
-          <a href="#">Services & Apps</a>
-          <a href="#">Driver Assistance</a>
-          <a href="#">Comfort & Safety</a>
-          <a href="#">Images & Videos</a>
-          <a href="#">Technical data</a>
+          <a href="#drivinDyn">Driving dynamics & efficiency</a>
+          <a href="#techData">Technical Data</a>
         </div>
       </div>
 
@@ -60,7 +61,7 @@
         alt="image of bmw logo"
       />
     </header>
-    <div class="hero">
+    <div class="hero animation">
       <img
         id="atGlance"
         src="./assets/images/3-series-sedan-at-a-glance-ts.jpg"
@@ -70,7 +71,9 @@
       <div class="mainTitle">
         <h1>DRIVING PLEASURE UNMATCHED.</h1>
         <h3>The BMW 3 Series Sedan.</h3>
-        <button class="buttons">View Film</button>
+        <button class="buttons">
+          <a href="https://www.youtube.com/watch?v=yVp1NRPJZWk">View Film</a>
+        </button>
         <p>
           The original since 1975: The BMW 3 Series is the embodiment of a
           sporty sedan. In its sixth generation, this irresistible combination
@@ -86,27 +89,71 @@
         </p>
       </div>
 
-      <div class="container">
-        <section id="design">
+      <div class="container animation">
+        <section
+          id="design"
+          src="carousel.js"
+        >
           <h1>DESIGN.</h1>
           <p>
             With its typical proportions and unmistakably sporty aura, the BMW 3
             Series Sedan has been a design icon since day one.
           </p>
           <div class="carousel">
-            <img
-              src="./assets/images/3-series-sedan-design-01.jpg"
-              alt="carousel series 3"
-            />
+            <section class="carouselContainer">
+              <div class="slider-wrapper">
+                <div class="slider">
+                  <img
+                    src="./assets/images/3-series-sedan-design-01.jpg"
+                    alt=""
+                    id="slide-1"
+                  />
+                  <img
+                    src="./assets/images/3-series-sedan-design-02.jpg"
+                    alt=""
+                    id="slide-2"
+                  />
+                  <img
+                    src="./assets/images/3-series-sedan-design-03.jpg"
+                    alt=""
+                    id="slide-3"
+                  />
+                  <img
+                    src="./assets/images/3-series-sedan-design-04.jpg"
+                    alt=""
+                    id="slide-4"
+                  />
+                  <img
+                    src="./assets/images/3-series-sedan-design-05.jpg"
+                    alt=""
+                    id="slide-5"
+                  />
+                </div>
+                <div class="slider-nav">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </section>
+
             <div class="designBottom">
-              <p>Backview.</p>
+              <p id="slide-1-desc">Backview.</p>
+              <p id="slide-2-desc">Sideview.</p>
+              <p id="slide-3-desc">Front light.</p>
+              <p id="slide-4-desc">Backlight.</p>
+              <p id="slide-5-desc">Interior.</p>
             </div>
-            <button class="buttons"><a href="">360º view</a></button>
+            <button class="buttons">
+              <a href="./public/360.html">360º view</a>
+            </button>
           </div>
         </section>
       </div>
 
-      <div class="container">
+      <div class="container animation">
         <section id="drivinDyn">
           <h1>Driving Dynamics & Efficiency</h1>
         </section>
@@ -116,14 +163,28 @@
         src="./assets/images/3-series-sedan-driving-dynamics-highlight-fw.jpg"
         alt="driving dynamics"
         id="dynamic"
+        class="animation"
       />
-      <p id="alone">
+      <p
+        class="animation"
+        id="alone"
+      >
         With its redeveloped chassis, the BMW 3 Series Sedan is more dynamic and
         more agile than ever before.
       </p>
+
+      <button
+        id="greyBut"
+        class="buttons animation"
+      >
+        <a
+          href="https://www.kavak.com/mx/usado/bmw-serie_3-20_320ia_sport_line_auto-sedan-2017"
+          >Check prices</a
+        >
+      </button>
     </div>
 
-    <div class="container">
+    <div class="container animation">
       <section id="techData">
         <h1>BMW SERIES 3 TECHNICAL DATA.</h1>
         <h2>BMW 320i</h2>
@@ -136,37 +197,53 @@
           <div class="specs">
             <div class="part">
               <p>Potencia en HP/rpm</p>
-              <p></p>
+              <p>184 HP</p>
             </div>
             <div class="part">
               <p>0 - 100 acceleration in km/h:</p>
-              <p></p>
+              <p>7.2</p>
             </div>
             <div class="part">
               <p>Consumo de combustible, promedio, en l/100km:</p>
-              <p></p>
+              <p>7.3</p>
             </div>
             <div class="part">
               <p>Emisiones de CO2, promedio, en g/km:</p>
-              <p>184</p>
+              <p>124</p>
             </div>
           </div>
         </div>
       </section>
     </div>
 
+    <div class="container animation">
+      <button class="buttons">
+        <a href="/assets/files/Propuesta_BMW_320i_Enrique_Milo.pdf"
+          >Download Enrique's petition</a
+        >
+      </button>
+    </div>
+
+    <div class="bmw-stripes">
+      <div class="blue"></div>
+      <div class="dark-blue"></div>
+      <div class="red"></div>
+    </div>
+
     <footer>
-      <div class="footerContainer">
+      <div class="footerContainer animation">
         <div class="firstPart">
           <menu>
             <li><a href="">Contact</a></li>
             <li><a href="#glance">At glance</a></li>
             <li><a href="#design">Design</a></li>
+            <li><a href="#drivinDyn">Driving dynamics & efficiency</a></li>
+            <li><a href="#techData">Technical Data</a></li>
           </menu>
         </div>
 
         <div class="lastPart">
-          © BMW Enrique Milo 2025
+          <h2>© BMW Enrique Milo 2025</h2>
           <menu>
             <li><a href="">Legal Notice</a></li>
             <li><a href="">Privacy Policy</a></li>
@@ -175,6 +252,6 @@
         </div>
       </div>
     </footer>
+    <script src="carousel.js"></script>
   </body>
-  <hr />
 </html>
