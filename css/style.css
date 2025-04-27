@@ -116,6 +116,8 @@ header {
 }
 
 .buttons {
+  width: 200px; /* Set a fixed width for consistency */
+  height: 50px; /* Set a fixed height for consistency */
   min-width: 180px;
   min-height: 3.25rem;
   padding: 0.25rem;
@@ -132,6 +134,10 @@ header {
   border: none;
   cursor: pointer;
   transition: background-color 0.25s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #greyBut {
@@ -141,6 +147,9 @@ header {
 .buttons a {
   text-decoration: none; /* Remove underline from links inside buttons */
   color: inherit; /* Ensure the link inherits the button's text color */
+  display: inline-block; /* Ensure the link behaves like a button */
+  width: 100%; /* Match the width of the button */
+  text-align: center; /* Center the text inside the link */
 }
 
 .buttons:hover {
@@ -363,6 +372,14 @@ section h1 {
 
 .carousel {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel a {
+  margin-bottom: 75px;
 }
 
 .carousel img {
@@ -370,6 +387,9 @@ section h1 {
   display: inline-block;
 }
 
+#petition {
+  width: 100%;
+}
 /* ========================
    Footer
 ======================== */
@@ -557,6 +577,10 @@ menu a:hover {
     object-fit: cover; /* Ensure the image maintains its aspect ratio */
     position: relative;
     left: -10%; /* Center the overflowed image within the container */
+  }
+
+  #design > h1 {
+    margin-bottom: 40px;
   }
 
   .designBottom {
