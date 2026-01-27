@@ -12,7 +12,6 @@ const observer = new IntersectionObserver((entries) => {
 const animationElements = document.querySelectorAll(".animation");
 animationElements.forEach((el) => observer.observe(el));
 
-// JavaScript for 360-degree viewer functionality
 const viewer360 = document.getElementById("viewer360");
 let isDragging = false;
 let startX;
