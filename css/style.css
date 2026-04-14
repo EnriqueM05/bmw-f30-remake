@@ -1,13 +1,10 @@
-/* ========================
-   Reset & Base Styles
-======================== */
 * {
   margin: 0;
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,9 +25,7 @@ h1 {
 .show {
   opacity: 1;
 }
-/* ========================
-   Header & Navigation
-======================== */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -54,9 +49,6 @@ header {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* ========================
-   Hero Section
-======================== */
 .hero {
   display: flex;
   flex-direction: column;
@@ -84,12 +76,11 @@ header {
   width: 70%;
 }
 
-/* Adjusting the position of .mainTitle2 to be at the top right of the image */
 .mainTitle2 {
   position: absolute;
-  top: 10px; /* Adjust as needed for spacing */
+  top: 10px;
   right: 200px;
-  text-align: right; /* Align text to the right */
+  text-align: right;
 }
 
 .mainTitle2 h1 {
@@ -116,8 +107,8 @@ header {
 }
 
 .buttons {
-  width: 200px; /* Set a fixed width for consistency */
-  height: 50px; /* Set a fixed height for consistency */
+  width: 200px;
+  height: 50px;
   min-width: 180px;
   min-height: 3.25rem;
   padding: 0.25rem;
@@ -145,20 +136,17 @@ header {
 }
 
 .buttons a {
-  text-decoration: none; /* Remove underline from links inside buttons */
-  color: inherit; /* Ensure the link inherits the button's text color */
-  display: inline-block; /* Ensure the link behaves like a button */
-  width: 100%; /* Match the width of the button */
-  text-align: center; /* Center the text inside the link */
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 .buttons:hover {
   background-color: #0653b6;
 }
 
-/* ========================
-   Dropdown Menu
-======================== */
 .dropbtn {
   transition: all 0.25s ease;
   width: 50px;
@@ -207,7 +195,7 @@ header {
 .dropdown::after.dropdown-content {
   display: block;
 }
-/* img carousel */
+
 
 .slider-wrapper {
   position: relative;
@@ -219,7 +207,7 @@ header {
 .slider {
   display: flex;
   aspect-ratio: 16 / 9;
-  overflow-x: hidden; /* Changed to hidden to prevent scrollbar */
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsl(0, 0%, 0.25);
@@ -246,7 +234,7 @@ header {
   height: 0.5rem;
   border-radius: 50%;
   opacity: 0.75;
-  background-color: #333; /* Highlight active dot */
+  background-color: #333;
   transition: opacity ease 250ms;
 }
 
@@ -274,9 +262,7 @@ header {
 .arrow.right {
   right: 0.5rem;
 }
-/* ========================
-   Sections & Layout
-======================== */
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -298,7 +284,7 @@ header {
   margin-bottom: 70px;
 }
 
-.designBottom > p {
+.designBottom>p {
   margin-top: 20px;
 }
 
@@ -306,12 +292,12 @@ section h1 {
   font-size: 2.5rem;
 }
 
-#design > p {
+#design>p {
   margin-top: 10px;
   margin-bottom: 50px;
 }
 
-#design > button {
+#design>button {
   color: #fff;
   text-decoration: none;
 }
@@ -339,6 +325,7 @@ section h1 {
 #techData h1 {
   margin-bottom: 20px;
 }
+
 #techData h2 {
   margin-bottom: 10px;
 }
@@ -361,9 +348,6 @@ section h1 {
   font-weight: bold;
 }
 
-/* ========================
-   Images & Carousel
-======================== */
 #atGlance {
   width: 100vw;
   display: block;
@@ -390,9 +374,7 @@ section h1 {
 #petition {
   width: 100%;
 }
-/* ========================
-   Footer
-======================== */
+
 .firstPart {
   background-color: #f6f6f6;
   padding: 60px;
@@ -449,17 +431,14 @@ menu a:hover {
   flex-direction: column;
 }
 
-/* ========================
-   BMW Stripes
-======================== */
 .bmw-stripes {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10px; /* Maintain the smaller height */
+  height: 10px;
   margin-top: 20px;
   position: relative;
-  overflow: hidden; /* Ensure the blur effect stays within bounds */
+  overflow: hidden;
 }
 
 .bmw-stripes div {
@@ -468,27 +447,24 @@ menu a:hover {
 }
 
 .bmw-stripes .blue {
-  background-color: #2e9cca; /* BMW blue */
+  background-color: #2e9cca;
 }
 
 .bmw-stripes .dark-blue {
-  background-color: #1c3c6b; /* BMW dark blue */
+  background-color: #1c3c6b;
 }
 
 .bmw-stripes .red {
-  background-color: #d11141; /* BMW red */
+  background-color: #d11141;
 }
 
 .bmw-stripes .blue,
 .bmw-stripes .dark-blue,
 .bmw-stripes .red {
-  filter: none; /* Remove the blur effect */
-  transform: none; /* Remove the horizontal stretching */
+  filter: none;
+  transform: none;
 }
 
-/* ========================
-   Media Queries
-======================== */
 @media (max-width: 1470px) {
   .mainTitle {
     margin-top: -150px;
@@ -513,42 +489,45 @@ menu a:hover {
   .mainTitle2 h3 {
     font-size: 0.7rem;
   }
+
   #anotherAlone {
     width: 70%;
   }
 }
 
 @media (max-width: 414px) {
+
   html,
   body {
-    width: 100%; /* Ensure the viewport width is respected */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+    overflow-x: hidden;
   }
 
   * {
-    box-sizing: border-box; /* Ensure padding and borders are included in element width */
+    box-sizing: border-box;
   }
 
   body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
   }
 
   .hero {
-    width: 100%; /* Ensure the hero section fits within the viewport */
+    width: 100%;
     object-fit: fill;
-    overflow: hidden; /* Ensure no child elements cause overflow */
+    overflow: hidden;
   }
 
   #atGlance {
-    width: 110%; /* Slightly larger image */
-    max-width: none; /* Prevent max-width restrictions */
+    width: 110%;
+    max-width: none;
     position: relative;
-    left: -5%; /* Center the overflowed image */
+    left: -5%;
   }
 
   h1 {
     font-size: 2rem;
   }
+
   #sheer {
     width: 80px;
   }
@@ -559,27 +538,28 @@ menu a:hover {
   }
 
   .container {
-    width: 90%; /* Ensure containers fit within the viewport */
-    margin: 0 auto; /* Center containers */
+    width: 90%;
+    margin: 0 auto;
   }
 
   .carousel img {
     width: 100%;
     display: inline-block;
   }
+
   #alone {
     width: 75%;
   }
 
   #atGlance {
-    width: 190%; /* Make the image larger than the container */
+    width: 190%;
     height: auto;
-    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+    object-fit: cover;
     position: relative;
-    left: -10%; /* Center the overflowed image within the container */
+    left: -10%;
   }
 
-  #design > h1 {
+  #design>h1 {
     margin-bottom: 40px;
   }
 
@@ -595,6 +575,7 @@ menu a:hover {
     flex-direction: column-reverse;
     gap: 20px;
   }
+
   .specs {
     width: 100%;
   }
@@ -617,7 +598,7 @@ menu a:hover {
   }
 
   .mainTitle2 {
-    top: 10px; /* Adjust as needed for spacing */
+    top: 10px;
     right: 20px;
   }
 
@@ -626,9 +607,6 @@ menu a:hover {
   }
 }
 
-/* ========================
-   Scrollbar Customization
-======================== */
 ::-webkit-scrollbar {
   width: 0px;
 }
